@@ -1,0 +1,3 @@
+usr/include/*
+usr/lib/*/libhawaii.so
+usr/lib/*/cmake/Hawaii/

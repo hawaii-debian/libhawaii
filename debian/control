@@ -1,0 +1,43 @@
+Source: libhawaii
+Priority: optional
+Maintainer: Rohan Garg <rohangarg@kubuntu.org>
+Build-Depends: debhelper (>= 9), cmake, extra-cmake-modules,
+ qtbase5-dev,
+ qtdeclarative5-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://maui-project.org/
+
+Package: libhawaii-dev
+Section: libdevel
+Architecture: any
+Depends: libhawaii0 (= ${binary:Version}), ${misc:Depends}
+Description: development files for the libhawaii libraries
+ This package installs various development files for the libhawaii
+ library.
+
+Package: libhawaii0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libhawaii library to do things for hawaii
+ libhawaii library to do things for hawaii
+
+Package: libhawaiishell0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libhawaiishell library to do things for hawaii
+ libhawaiishell library to do things for hawaii
+
+Package: qml-module-hawaiishell-core
+Architecture: any
+Depends: libhawaii0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: qml module provided by libhawaii
+ QML component provided by lib hawaii
+
+Package: libhawaiishell-dev
+Section: libdevel
+Architecture: any
+Depends: libhawaiishell0 (= ${binary:Version}), ${misc:Depends}
+Description: development files for the libhawaiishell libraries
+ This package installs various development files for the libhawaiishell
+ library.
